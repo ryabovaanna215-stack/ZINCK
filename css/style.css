@@ -1,0 +1,522 @@
+/* Голова */
+header{
+    width: 100%;
+    padding: 0.94rem 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color_black);
+}
+.logo{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 10px;
+    user-select: none;
+    font-family: Oswald;
+}
+header nav.main_nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--color_white);
+}
+header nav.minor_imp{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div.exile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+
+}
+div.img_minor_imp img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+div.img_minor_imp img:hover{
+    background-color: var(--color_blue);
+    padding: 0.3rem;
+    border-radius: 15px;
+}
+
+.welcome{
+    width: 100%;
+    height: 50rem;
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+div.welcome_content{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.25rem;
+    border-radius: 20px;
+    position: absolute;
+}
+h1.welcome_content, h2.welcome_content, p.welcome_content{
+    color: var(--color_white);
+}
+h1.welcome_content{font-size: 2.5rem;}
+h2.welcome_content{font-size: 2.2rem;}
+p.welcome_content{font-size: 1.56rem;}
+
+/* Слайдер приветственного раздела */
+.conteiner_header{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+div.conteiner_header img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+main.main_header .slider_welcome{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    overflow: hidden;
+}
+main.main_header div.button_nav{
+    display: none;
+    opacity: 0;
+}
+
+/* Меню */
+.menu{
+    width: 100%;
+    padding: 0.94rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color_white);
+}
+.menu_p{
+    padding: 0.44rem;
+    font-size: 1.25rem;
+    color: black;
+}
+.block_1{
+    margin: 0 0.6rem;
+    padding: 0.44rem;
+}
+.block_1 .menu_p:hover{
+    background-color: var(--color_blue);
+    border-radius: 8px;
+    color: var(--color_white);
+}
+.block_1 .menu_p{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+h2.menu_h2{
+    background-color: var(--color_white);
+    color: var(--color_black);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* О нас */
+section.about_us{
+    background-color: var(--color_darkgrey);
+}
+div.about_us_main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 3.1rem 0;
+}
+div.about_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21.25rem;
+    height: 12.5rem;
+    position: relative;
+}
+div.about_us img.container{
+    width: 10rem;
+    height: 10rem;
+}
+h2.about_us{
+    padding: 0.625rem;
+    color: var(--color_white);
+    font-family: Inter;
+    font-size: 1.25rem;
+}
+h2.title{
+    color: var(--color_white);
+    background-color: var(--color_black);
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.active_1, .active_2, .active_3, .active_4{
+    width: 21.25rem;
+    height: 12.5rem;
+    position: absolute;
+    background-color: var(--color_blue);
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    transition-delay: 0,3s;
+    transition: opacity 0.3s ease;
+}
+p.active{
+    color: var(--color_white);
+    font-family: Inter;
+    font-size: 0.94rem;
+    padding: 0.94rem;
+}
+
+div.about_us:hover .active_1,p.active{
+    opacity: 1;
+}
+div.about_us:hover .active_2,p.active{
+    opacity: 1;
+}
+div.about_us:hover .active_3,p.active{
+    opacity: 1;
+}
+div.about_us:hover .active_4,p.active{
+    opacity: 1;
+}
+
+
+/* Коллекцции */
+h2.collections{
+    text-align: center;
+    color: var(--);
+    padding: 1.25rem;
+    font-size: 1.8rem;
+    background-color: var(--color_black);
+    color: var(--color_white);
+}
+main.left_part{
+    width: 70%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.75rem 16.9rem 5rem;
+    grid-template-areas: 
+        "h2"
+        "p"
+        "colors";
+    
+    grid-area: left_part;
+
+    padding: 1.8rem 4.67rem;
+}
+#left_part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section.color{
+    grid-area: colors;
+}
+main.color{
+    display: flex;
+    flex-direction: row; 
+    justify-content: baseline;
+    gap: 28px;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+div.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0;
+}
+.p_text_about{
+    text-align: left;
+    grid-area: p;
+    color: var(--color_white);
+    padding: 0.625rem 0;
+}
+.h2_about{
+    font-size: 3.1rem;
+    grid-area: h2;
+    color: var(--color_white);
+    text-align: left;
+
+    padding: 0.3rem 0;
+}
+
+/* Слайдер */
+main.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: slider;
+    padding: 0.94rem 0;
+}
+.slider{
+    width: 50rem;
+    height: 31.25rem;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+.track{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition-duration: 1s;
+}
+.conteiner{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+.button_nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+div.conteiner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+button{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 3%;
+    border-radius: 50%;
+    border: none;
+    margin: 0.3rem;
+}
+
+/* Кнопка для поднятия наверх */
+#elevator{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color_blue);
+    background-image: url(/Всякое_рисованное/elevator.png);
+    background-position: center;
+    background-size: cover;
+    bottom: 0.625rem;
+    right: 1.25rem;
+}
+
+/* Форма связи */
+section.form_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "main_left img_form"
+        "main_left img_form";
+    position: relative;
+    color: var(--color_white);
+    background-color: var(--color_black);
+    padding: 1.8rem 4.4rem;
+}
+main.left_part_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    grid-area: main_left;
+}
+main.left_part_form h2{
+    font-size: 2.2rem;
+}
+main.left_part_form h2, p{color: var(--color_white);}
+main.img_form{
+    grid-area: img_form;
+    position: absolute;
+    padding: 0 0 0 4.67rem;
+}
+img.img_form{
+    object-fit: contain;
+    width: 50rem;
+    border-radius: 20px;
+}
+input[type="email"],input[type="text"],input[type="number"]{
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    font-family: Inter;
+    border-radius: 10px;
+}
+input[type="radio"]{
+    margin: 0 0.94rem 0 0;
+    width: 1.56rem;
+    height: 1.56rem;
+    accent-color: var(--color_blue);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem 0;
+}
+label{
+    padding: 0.625rem 0;
+    font-family: Oswald;
+    font-size: 1.56rem;
+}
+section.sex{
+    display: flex;
+    justify-content: left;
+    font-family: Inter;
+    font-size: 1.56rem;
+    padding: 0.625rem 0;
+}
+section.male{
+    padding: 0 3.1rem 0 0;
+}
+button.form{
+    border-radius: 15px;
+    background-color: var(--color_white);
+    border: 5px solid var(--color_white);
+    font-size: 1.56rem;
+    padding: 0.3rem;
+    width: 12.5rem;
+    font-family: Inter;
+    margin: 0.625rem 0;
+}
+button.form:hover{
+    border: 5px solid var(--color_blue);
+}
+main.thank_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#thank_message {
+    display: none; 
+}
+#thank_message.active {
+    display: flex;
+}
+main.thank_message div.thank_message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.94rem;
+    background-color: var(--color_blue);
+    z-index: 1000;
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+}
+button.form_thank{
+    border-radius: 15px;
+    background-color: var(--color_white);
+    border: 5px solid var(--color_white);
+    font-size: 1.25rem;
+    padding: 0.3rem;
+    width: 12.5rem;
+    font-family: Inter;
+    margin: 0.625rem 0;
+}
+main.thank_message div.thank_message h2{
+    color: var(--color_white);
+}
+main.thank_message div.thank_message img{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: var(--color_white);
+    border-radius: 50%;
+    padding: 0.625rem;
+}
+
+/* Контакты */
+section.contacts{
+    background-color: var(--color_black);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "phone social";
+    position: relative;
+    height: 18.75rem;
+    padding: 1.8rem 4.4rem;
+}
+main.phones h2, main.social_media h2{
+    color: var(--color_white);
+    font-size: 2.2rem;
+    padding: 1.25rem 0;
+}
+main.phones{
+    grid-area: phone;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+main.social_media{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding: 0 1.25rem;
+}
+main.number p{
+    font-size: 1.8rem;
+    margin: 0 3.1rem 0 0;
+}
+main.img_social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+main.img_social img{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: var(--color_darkgrey);
+    border-radius: 50%;
+    margin-left: 2.8rem;
+}
+main.img_social img:hover{
+    background-color: var(--color_lightgrey);
+}
+/* Подвал */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color_black);
+    padding: 3.1rem 0 1.56rem 0;
+}
+
+.footer_p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.56rem;
+    letter-spacing: 5px;
+}

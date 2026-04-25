@@ -1,0 +1,57 @@
+.neon{
+    margin: 15px 0 0 0;
+    padding: 10px 0;
+    background-image: url(/Всякое_рисованное/Neon/фон_для_сайта.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 5fr 1fr;
+    grid-template-areas: 
+        "left_part slider"
+        "left_part slider"
+        "left_part slider";
+}
+
+.neon_color_1{
+    width: 70px;
+    height: 70px;
+    background-color: #c2ff40;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.neon_color_2{
+    width: 70px;
+    height: 70px;
+    background-color: #f7377e;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.neon_color_3{
+    width: 70px;
+    height: 70px;
+    background-color: #ffd808;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.neon_color_4{
+    width: 70px;
+    height: 70px;
+    background-color: #fe6941;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.neon_color_5{
+    width: 70px;
+    height: 70px;
+    background-color: #01ffdc;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.neon_color_6{
+    width: 70px;
+    height: 70px;
+    background-color: #f72551;
+    border: 2px white solid;
+    border-radius: 5px;
+}

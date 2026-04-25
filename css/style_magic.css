@@ -1,0 +1,56 @@
+.magic{
+    margin: 15px 0;
+    padding: 10px 0;
+    background-image: url(/Всякое_рисованное/Magic/фон_для_сайта.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 5fr 1fr;
+    grid-template-areas: 
+        "left_part slider"
+        "left_part slider"
+        "left_part slider";
+}
+.magic_color_1{
+    width: 70px;
+    height: 70px;
+    background-color: #c2d9ff;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.magic_color_2{
+    width: 70px;
+    height: 70px;
+    background-color: #1230ae;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.magic_color_3{
+    width: 70px;
+    height: 70px;
+    background-color: #7481a3;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.magic_color_4{
+    width: 70px;
+    height: 70px;
+    background-color: #161853;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.magic_color_5{
+    width: 70px;
+    height: 70px;
+    background-color: #ee6f57;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.magic_color_6{
+    width: 70px;
+    height: 70px;
+    background-color: #d3c4ab;
+    border: 2px white solid;
+    border-radius: 5px;
+}

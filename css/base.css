@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+:root{
+    --color_white:#ffffff;
+    --color_lightgrey:#cfcfcf;
+    --color_darkgrey:#424242;
+    --color_black:#000000;
+    --color_blue: #30728b;
+}
+@font-face {
+    font-family: Oswald;
+    src: url(/fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(/fonts/Inter_24pt-Light.ttf);
+}
+h1,h2,h3{
+    color: black;
+    font-family: Oswald;
+}
+h1, h2{
+    text-transform: uppercase;
+}
+
+p,a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Inter;
+}
+nav a{
+    color: var(--color_white);
+}
+a:hover{
+    margin-bottom: 5px;
+}
+a{
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+::selection {
+    background-color: var(--color_blue); 
+    color: var(--color_white);
+}

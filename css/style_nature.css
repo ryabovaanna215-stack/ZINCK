@@ -1,0 +1,57 @@
+.natural{
+    padding: 10px 0;
+    background-image: url(/Всякое_рисованное/Nature/фон_для_сайта.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "left_part slider"
+        "left_part slider"
+        "left_part slider";
+}
+
+.natural_color_1{
+    width: 70px;
+    height: 70px;
+    background-color: #86a788;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.natural_color_2{
+    width: 70px;
+    height: 70px;
+    background-color: #ffb38e;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.natural_color_3{
+    width: 70px;
+    height: 70px;
+    background-color: #bfecff;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.natural_color_4{
+    width: 70px;
+    height: 70px;
+    background-color: #f0c1e1;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.natural_color_5{
+    width: 70px;
+    height: 70px;
+    background-color: #d6c0b3;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+.natural_color_6{
+    width: 70px;
+    height: 70px;
+    background-color: #ba94d1;
+    border: 2px white solid;
+    border-radius: 5px;
+}
