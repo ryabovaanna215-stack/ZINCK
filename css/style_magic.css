@@ -1,7 +1,7 @@
 .magic{
     margin: 15px 0;
     padding: 10px 0;
-    background-image: url(images/Magic/фон_для_сайта.png);
+    background-image: url(../images/Magic/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
     display: grid;

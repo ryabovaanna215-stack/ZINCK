@@ -1,7 +1,7 @@
 .neon{
     margin: 15px 0 0 0;
     padding: 10px 0;
-    background-image: url(images/Neon/фон_для_сайта.png);
+    background-image: url(../images/Neon/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
     display: grid;
