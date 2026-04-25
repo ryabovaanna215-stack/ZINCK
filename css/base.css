@@ -16,11 +16,11 @@ html, body{
 }
 @font-face {
     font-family: Oswald;
-    src: url(/fonts/Oswald-VariableFont_wght.ttf);
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: Inter;
-    src: url(/fonts/Inter_24pt-Light.ttf);
+    src: url(../fonts/Inter_24pt-Light.ttf);
 }
 h1,h2,h3{
     color: black;
