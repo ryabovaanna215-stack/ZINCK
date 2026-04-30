@@ -357,7 +357,7 @@ main.left_part_form h2, p{color: var(--color_white);}
 main.img_form{
     grid-area: img_form;
     position: absolute;
-    padding: 0 0 0 4.67rem;
+    padding: 0 0 0 0.94rem;
 }
 img.img_form{
     object-fit: contain;
