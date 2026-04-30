@@ -1,0 +1,8 @@
+@media (max-width: 1730px) {
+    #elevator{
+        right: 1.8rem;
+    }
+    main.img_form, main.main{
+        padding: 0 1.8rem 0;
+    }
+}
