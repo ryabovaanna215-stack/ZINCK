@@ -1,6 +1,6 @@
 .neon{
     margin: 15px 0 0 0;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     background-image: url(../images/Neon/фон_для_сайта.png);
     background-size: cover;
     background-position: center;
@@ -14,43 +14,43 @@
 }
 
 .neon_color_1{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #c2ff40;
     border: 2px white solid;
     border-radius: 5px;
 }
 .neon_color_2{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #f7377e;
     border: 2px white solid;
     border-radius: 5px;
 }
 .neon_color_3{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #ffd808;
     border: 2px white solid;
     border-radius: 5px;
 }
 .neon_color_4{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #fe6941;
     border: 2px white solid;
     border-radius: 5px;
 }
 .neon_color_5{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #01ffdc;
     border: 2px white solid;
     border-radius: 5px;
 }
 .neon_color_6{
-    width: 70px;
-    height: 70px;
+    width: 4.4rem;
+    height: 4.4rem;
     background-color: #f72551;
     border: 2px white solid;
     border-radius: 5px;
