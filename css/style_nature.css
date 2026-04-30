@@ -6,7 +6,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 3.1rem 5fr 1fr;
     grid-template-areas: 
         "left_part slider"
         "left_part slider"
