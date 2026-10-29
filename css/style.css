@@ -18,7 +18,7 @@ header{
 header nav.main_nav{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     color: var(--color_white);
 }
 header nav.minor_imp{
@@ -69,25 +69,100 @@ p.welcome_content{
 
 /* Слайдер приветственного раздела */
 .conteiner_header{
-    width: 100%;
+    flex: 0 0 100%;
     height: 100%;
-    flex-shrink: 0;
+    font-size: 0; 
     grid-area: conteiner_header;
 }
-div.conteiner_header img{
-    object-fit: cover;
+div.conteiner_header img {
     width: 100%;
     height: 100%;
+    object-fit: cover; 
+    display: block; 
+    -webkit-user-drag: none;   
+    user-select: none;         
+    pointer-events: none;      
 }
-main.main_header .slider_welcome{
+main.main_header .slider_welcome {
     width: 100%;
     height: 50rem;
     position: relative;
     overflow: hidden;
+    touch-action: pan-y;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
 }
-main.main_header div.button_nav{
+
+.slider_welcome.dragging {
+    cursor: grabbing;
+}
+
+.slider_welcome.dragging .track_header {
+    cursor: grabbing;
+}
+
+main.main_header div.button_nav {
     display: none;
     opacity: 0;
+}
+
+.track_header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.conteiner_header {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+div.conteiner_header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.slider_welcome .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider_welcome .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color_white);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider_welcome .dot:hover {
+    background-color: var(--color_white);
+    transform: scale(1.15);
+}
+
+.slider_welcome .dot.active {
+    background-color: var(--color_blue);
+    border-color: var(--color_blue);
+    transform: scale(1.2);
 }
 
 /* Меню */
@@ -96,7 +171,6 @@ main.main_header div.button_nav{
     padding: 0.94rem 0;
     display: flex;
     justify-content: center;
-    background-color: var(--color_white);
     grid-area: menu;
 }
 .menu_p{
@@ -557,4 +631,176 @@ footer{
     text-transform: uppercase;
     font-size: 1.56rem;
     letter-spacing: 5px;
+}
+
+/* плавность появления элементов */
+section { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: 0.6s ease; }
+section.visible { 
+    opacity: 1; 
+    transform: none; 
+}
+
+/* как это работает */
+section.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: work;
+    background-color: var(--color_white);
+    padding: 3rem 1rem;
+}
+
+section.work h2{
+    padding: 2rem 0;
+    color: var(--color_black);
+    text-align: center;
+}
+
+div.sections{
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 0 0 10vh;
+}
+
+div.sections::before{
+    content: '';
+    position: absolute;
+    left: 32.5%;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    transform: translateX(-50%);
+    background-color: var(--color_darkgrey);
+    z-index: 1;
+}
+
+div.section{
+    width: 100%;                 
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    padding: 10px;
+}
+
+div.section:not(:first-child){
+    padding-top: 60px;
+}
+
+div.info::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    background-color: var(--color_darkgrey);
+    border-radius: 50%;
+    padding: 4px;
+    z-index: 2;
+    transition: all 0.5s ease-in;
+}
+
+div.info::after{
+    content: '';
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 55%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: var(--color_darkgrey);
+    z-index: 0;
+}
+
+div.info{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    padding-right: 1rem;             
+    box-sizing: border-box;
+}
+
+div.step{
+    width: 200px;
+    padding: 10px;
+    background-color: var(--color_darkgrey);
+    text-align: center;
+    z-index: 3;
+    transition: all 0.5s ease-in;
+}
+
+div.step p{
+    font-size: 20px;
+    color: var(--color_white);
+}
+
+div.info_img{
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+    flex-shrink: 0;
+}
+
+div.info_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: var(--color_darkgrey);
+    padding: 5px;
+    transition: all 0.5s ease-in;
+}
+
+div.section div.text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;     
+    padding-left: 3rem;              
+    box-sizing: border-box;
+}
+
+div.section div.text p{
+    color: var(--color_black);
+    transition: all 0.5s ease-in;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+
+div.section:hover div.info div.step{
+    background-color: var(--color_lightgrey);
+    transform: scale(1.2);
+}
+
+div.section:hover div.info div.step p{
+    font-size: 22px;
+}
+
+div.section:hover div.info div.info_img img{
+    filter: brightness(1);
+    transform: scale(1.1);
+    background-color: var(--color_blue);
+}
+
+div.section:hover div.text p{
+    transform: scale(1.2);
+}
+
+div.section:hover div.info::before{
+    background-color: var(--color_lightgrey);
 }

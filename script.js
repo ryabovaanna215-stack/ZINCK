@@ -143,23 +143,23 @@ btn_elevator.onclick = ()=>{
 }
 
 // Приветственный слайдер
-const header = document.getElementById('track_header')
+// const header = document.getElementById('track_header')
 
-let move_h = 0
-let carrent_h = 1
+// let move_h = 0
+// let carrent_h = 1
 
-setInterval(()=>{
-    if (carrent_h < header.children.length){
-        move_h -=100
-        carrent_h +=1
-        header.style.cssText = `transform: translateX(${move_h}%)`
-    }
-    else{
-        carrent_h = 1
-        move_h = 0
-        header.style.cssText = `transform: translateX(0%)`
-    }
-},4000)
+// setInterval(()=>{
+//     if (carrent_h < header.children.length){
+//         move_h -=100
+//         carrent_h +=1
+//         header.style.cssText = `transform: translateX(${move_h}%)`
+//     }
+//     else{
+//         carrent_h = 1
+//         move_h = 0
+//         header.style.cssText = `transform: translateX(0%)`
+//     }
+// },4000)
 
 // Перемещение по сайту основное
 const about_us = document.getElementById('href_1')
@@ -199,3 +199,14 @@ btn_connect.onclick = (e)=>{
 btn_thank.onclick = ()=>{
     main.classList.remove('active')
 }
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('section').forEach(s => observer.observe(s));
